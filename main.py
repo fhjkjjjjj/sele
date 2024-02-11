@@ -19,7 +19,7 @@ def download():
 @app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == "GET":
-        return download()
+        return "hello"
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
